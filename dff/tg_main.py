@@ -97,7 +97,6 @@ happy_path = (
     (Message(text="Bye"), Message(text="Hi")),
 )
 
-os.environ['TG_BOT_TOKEN'] = '6225164111:AAH7ZWp8Pzv4SW-4rsvx8MDlZpCcKaT_Gz4'
 interface = PollingTelegramInterface(token=os.getenv("TG_BOT_TOKEN", ""))
 
 pipeline = Pipeline.from_script(
